@@ -3,48 +3,324 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>TekStar Technologies</title>
+  <title>TekStar Technologies — Innovate. Build. Secure.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <header>
-    <h1>TekStar Technologies</h1>
-    <nav>
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="logo">Tek<span>Star</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="#contact" class="nav-cta">Get Started</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobile-menu">
       <a href="#about">About</a>
       <a href="#services">Services</a>
+      <a href="#portfolio">Portfolio</a>
       <a href="#contact">Contact</a>
-    </nav>
-  </header>
+    </div>
+  </nav>
 
+  <!-- HERO -->
   <section id="hero">
-    <h2>Innovative Tech Solutions for Your Business</h2>
-    <p>We build software, websites, and digital products that drive growth.</p>
-    <a href="#contact" class="btn">Get in Touch</a>
-  </section>
+    <div class="hero-bg">
+      <div class="grid-overlay"></div>
+      <div class="blob b1"></div>
+      <div class="blob b2"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">🚀 Next-Gen Technology Partner</div>
+      <h1>We Build <span class="highlight">Digital</span><br>Solutions That <span class="highlight">Scale</span></h1>
+      <p class="hero-sub">From web apps to cloud infrastructure — TekStar Technologies delivers cutting-edge solutions that power businesses forward.</p>
+      <div class="hero-btns">
+        <a href="#services" class="btn-primary">Explore Services</a>
+        <a href="#portfolio" class="btn-outline">View Our Work</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><strong>50+</strong><span>Projects Delivered</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><strong>30+</strong><span>Happy Clients</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><strong>5+</strong><span>Years Experience</span></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="code-card">
+        <div class="code-header"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span><span class="code-title">tekstar.app</span></div>
+        <pre class="code-body"><span class="c-blue">const</span> <span class="c-green">solution</span> = <span class="c-blue">await</span>
+  TekStar.<span class="c-yellow">build</span>({
+    <span class="c-green">type</span>: <span class="c-orange">'web-app'</span>,
+    <span class="c-green">scale</span>: <span class="c-orange">'enterprise'</span>,
+    <span class="c-green">security</span>: <span class="c-orange">'maximum'</span>,
+  });
 
-  <section id="about">
-    <h2>About Us</h2>
-    <p>TekStar Technologies is a technology company dedicated to delivering cutting-edge solutions.</p>
-  </section>
-
-  <section id="services">
-    <h2>Our Services</h2>
-    <div class="cards">
-      <div class="card"><h3>Web Development</h3><p>Modern, fast websites.</p></div>
-      <div class="card"><h3>App Development</h3><p>iOS and Android apps.</p></div>
-      <div class="card"><h3>IT Consulting</h3><p>Expert tech guidance.</p></div>
+<span class="c-blue">console</span>.<span class="c-yellow">log</span>(solution);
+<span class="c-comment">// ✅ Deployed successfully</span></pre>
+      </div>
     </div>
   </section>
 
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <p>Email: hello@tekstartechnologies.com</p>
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-left">
+          <div class="section-tag">About Us</div>
+          <h2>Technology That Moves <span class="highlight">Your Business Forward</span></h2>
+          <p>TekStar Technologies is a full-service technology company based in India, dedicated to delivering innovative digital solutions for businesses of all sizes.</p>
+          <p>We combine technical excellence with strategic thinking to build products that are not just functional — but exceptional.</p>
+          <div class="about-features">
+            <div class="feature-item"><div class="feature-icon">⚡</div><div><strong>Fast Delivery</strong><p>Agile development with rapid iterations</p></div></div>
+            <div class="feature-item"><div class="feature-icon">🔒</div><div><strong>Secure by Default</strong><p>Security built into every layer</p></div></div>
+            <div class="feature-item"><div class="feature-icon">📈</div><div><strong>Built to Scale</strong><p>Solutions that grow with your business</p></div></div>
+          </div>
+        </div>
+        <div class="about-right">
+          <div class="about-card main-card">
+            <div class="card-icon">🌐</div>
+            <h3>Global Standards</h3>
+            <p>We follow international best practices in development, security, and project management.</p>
+          </div>
+          <div class="about-card side-card">
+            <div class="card-icon">🤝</div>
+            <h3>Client-First</h3>
+            <p>Your success is our success. We partner closely with every client.</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">What We Do</div>
+        <h2>Our <span class="highlight">Services</span></h2>
+        <p>End-to-end technology solutions tailored to your business needs.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card" data-delay="0">
+          <div class="service-icon">💻</div>
+          <h3>Web Development</h3>
+          <p>Modern, fast, and responsive websites and web applications built with the latest technologies.</p>
+          <ul>
+            <li>Custom websites & portals</li>
+            <li>E-commerce platforms</li>
+            <li>Progressive Web Apps</li>
+          </ul>
+        </div>
+        <div class="service-card featured" data-delay="100">
+          <div class="featured-badge">Most Popular</div>
+          <div class="service-icon">📱</div>
+          <h3>App Development</h3>
+          <p>Native and cross-platform mobile applications for iOS and Android that users love.</p>
+          <ul>
+            <li>iOS & Android apps</li>
+            <li>Cross-platform solutions</li>
+            <li>UI/UX design</li>
+          </ul>
+        </div>
+        <div class="service-card" data-delay="200">
+          <div class="service-icon">🧠</div>
+          <h3>IT Consulting</h3>
+          <p>Strategic technology guidance to help your business make the right decisions.</p>
+          <ul>
+            <li>Digital transformation</li>
+            <li>Tech stack advisory</li>
+            <li>Process automation</li>
+          </ul>
+        </div>
+        <div class="service-card" data-delay="300">
+          <div class="service-icon">☁️</div>
+          <h3>Cloud Services</h3>
+          <p>Scalable cloud infrastructure and DevOps solutions on AWS, Azure, and Google Cloud.</p>
+          <ul>
+            <li>Cloud migration</li>
+            <li>Infrastructure setup</li>
+            <li>CI/CD pipelines</li>
+          </ul>
+        </div>
+        <div class="service-card" data-delay="400">
+          <div class="service-icon">🔐</div>
+          <h3>Cybersecurity</h3>
+          <p>Protect your business from threats with enterprise-grade security solutions.</p>
+          <ul>
+            <li>Security audits</li>
+            <li>Penetration testing</li>
+            <li>Compliance consulting</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section id="portfolio">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Our Work</div>
+        <h2>Recent <span class="highlight">Projects</span></h2>
+        <p>A glimpse of what we've built for our clients.</p>
+      </div>
+      <div class="portfolio-grid">
+        <div class="portfolio-card p1">
+          <div class="portfolio-overlay">
+            <div class="portfolio-tag">Web Development</div>
+            <h3>E-Commerce Platform</h3>
+            <p>Full-stack online store with payment integration and real-time inventory.</p>
+          </div>
+        </div>
+        <div class="portfolio-card p2">
+          <div class="portfolio-overlay">
+            <div class="portfolio-tag">Mobile App</div>
+            <h3>FinTech Dashboard</h3>
+            <p>Cross-platform finance management app with live data analytics.</p>
+          </div>
+        </div>
+        <div class="portfolio-card p3">
+          <div class="portfolio-overlay">
+            <div class="portfolio-tag">Cloud & DevOps</div>
+            <h3>Cloud Migration</h3>
+            <p>Migrated legacy infrastructure to AWS, reducing costs by 40%.</p>
+          </div>
+        </div>
+        <div class="portfolio-card p4">
+          <div class="portfolio-overlay">
+            <div class="portfolio-tag">Cybersecurity</div>
+            <h3>Security Audit</h3>
+            <p>Comprehensive security overhaul for a healthcare data platform.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-left">
+          <div class="section-tag">Get In Touch</div>
+          <h2>Let's Build Something <span class="highlight">Amazing</span></h2>
+          <p>Have a project in mind? We'd love to hear about it. Send us a message and we'll get back to you within 24 hours.</p>
+          <div class="contact-info">
+            <div class="contact-item"><span class="contact-icon">📧</span><span>hello@tekstartechnologies.com</span></div>
+            <div class="contact-item"><span class="contact-icon">📍</span><span>India</span></div>
+            <div class="contact-item"><span class="contact-icon">⏰</span><span>Mon–Fri, 9am–6pm IST</span></div>
+          </div>
+        </div>
+        <div class="contact-right">
+          <form class="contact-form" id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" placeholder="Your name" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="you@example.com" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="service">Service Interested In</label>
+              <select id="service">
+                <option value="">Select a service...</option>
+                <option>Web Development</option>
+                <option>App Development</option>
+                <option>IT Consulting</option>
+                <option>Cloud Services</option>
+                <option>Cybersecurity</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" rows="5" placeholder="Tell us about your project..." required></textarea>
+            </div>
+            <button type="submit" class="btn-primary full-width">Send Message →</button>
+            <div id="form-success" class="form-success" style="display:none">✅ Message sent! We'll be in touch soon.</div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
   <footer>
-    <p>&copy; 2026 TekStar Technologies. All rights reserved.</p>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="logo">Tek<span>Star</span></a>
+          <p>Building the digital future, one solution at a time.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Company</h4>
+          <a href="#about">About Us</a>
+          <a href="#services">Services</a>
+          <a href="#portfolio">Portfolio</a>
+        </div>
+        <div class="footer-links">
+          <h4>Services</h4>
+          <a href="#services">Web Development</a>
+          <a href="#services">App Development</a>
+          <a href="#services">Cybersecurity</a>
+        </div>
+        <div class="footer-links">
+          <h4>Contact</h4>
+          <a href="#contact">Get a Quote</a>
+          <a href="mailto:hello@tekstartechnologies.com">Email Us</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 TekStar Technologies. All rights reserved.</p>
+      </div>
+    </div>
   </footer>
 
+  <script>
+    // Navbar scroll effect
+    window.addEventListener('scroll', () => {
+      document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50);
+    });
+
+    // Hamburger menu
+    document.getElementById('hamburger').addEventListener('click', () => {
+      document.getElementById('mobile-menu').classList.toggle('open');
+    });
+
+    // Close mobile menu on link click
+    document.querySelectorAll('#mobile-menu a').forEach(a => {
+      a.addEventListener('click', () => document.getElementById('mobile-menu').classList.remove('open'));
+    });
+
+    // Scroll animations
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.service-card, .portfolio-card, .about-card, .feature-item').forEach(el => {
+      el.classList.add('fade-up');
+      observer.observe(el);
+    });
+
+    // Contact form
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      document.getElementById('form-success').style.display = 'block';
+      this.reset();
+      setTimeout(() => document.getElementById('form-success').style.display = 'none', 5000);
+    });
+  </script>
 </body>
 </html>
