@@ -7,6 +7,16 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
+
+  <!-- ✅ Google Analytics — Replace G-XXXXXXXXXX with your real Measurement ID -->
+  <!-- To get your ID: analytics.google.com → Admin → Data Streams → Measurement ID -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
 </head>
 <body>
 
@@ -17,6 +27,8 @@
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#services">Services</a></li>
+        <li><a href="#training">Training</a></li>
+        <li><a href="#outsourcing">Outsourcing</a></li>
         <li><a href="#portfolio">Portfolio</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -28,6 +40,8 @@
     <div class="mobile-menu" id="mobile-menu">
       <a href="#about">About</a>
       <a href="#services">Services</a>
+      <a href="#training">Training</a>
+      <a href="#outsourcing">Outsourcing</a>
       <a href="#portfolio">Portfolio</a>
       <a href="#contact">Contact</a>
     </div>
@@ -167,6 +181,99 @@
     </div>
   </section>
 
+  <!-- TRAINING -->
+  <section id="training">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Learn With Us</div>
+        <h2>Professional <span class="highlight">Training Programs</span></h2>
+        <p>Hands-on, industry-ready training programs designed for beginners and professionals alike.</p>
+      </div>
+      <div class="training-grid">
+        <div class="training-card">
+          <div class="training-icon">💻</div>
+          <div class="training-info">
+            <h3>Web Development</h3>
+            <p>HTML, CSS, JavaScript, React & full-stack development from scratch to deployment.</p>
+            <div class="training-meta">
+              <span class="training-badge">8 Weeks</span>
+              <span class="training-badge">Beginner–Advanced</span>
+            </div>
+          </div>
+        </div>
+        <div class="training-card">
+          <div class="training-icon">📱</div>
+          <div class="training-info">
+            <h3>App Development</h3>
+            <p>Build iOS & Android apps using Flutter and React Native with real project experience.</p>
+            <div class="training-meta">
+              <span class="training-badge">10 Weeks</span>
+              <span class="training-badge">Intermediate</span>
+            </div>
+          </div>
+        </div>
+        <div class="training-card">
+          <div class="training-icon">☁️</div>
+          <div class="training-info">
+            <h3>Cloud Computing</h3>
+            <p>AWS, Azure & GCP fundamentals, architecture, deployment, and certification prep.</p>
+            <div class="training-meta">
+              <span class="training-badge">6 Weeks</span>
+              <span class="training-badge">All Levels</span>
+            </div>
+          </div>
+        </div>
+        <div class="training-card">
+          <div class="training-icon">🔐</div>
+          <div class="training-info">
+            <h3>Cybersecurity</h3>
+            <p>Ethical hacking, penetration testing, network security & compliance essentials.</p>
+            <div class="training-meta">
+              <span class="training-badge">8 Weeks</span>
+              <span class="training-badge">Intermediate–Advanced</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="training-cta">
+        <p>🎓 All programs include <strong>certificate of completion</strong>, live sessions & hands-on projects.</p>
+        <a href="#contact" class="btn-primary" style="background:var(--blue-600);color:#fff;">Enroll Now →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- STAFF OUTSOURCING -->
+  <section id="outsourcing">
+    <div class="container">
+      <div class="outsourcing-grid">
+        <div class="outsourcing-left">
+          <div class="section-tag">Staff Outsourcing</div>
+          <h2>Scale Your Team <span class="highlight">On Demand</span></h2>
+          <p>Need skilled tech talent fast? We provide pre-vetted, experienced professionals who integrate seamlessly with your team — on short-term or long-term contracts.</p>
+          <div class="outsourcing-benefits">
+            <div class="benefit-item"><span class="benefit-icon">✅</span><div><strong>Pre-vetted Talent</strong><p>All professionals are tested and verified</p></div></div>
+            <div class="benefit-item"><span class="benefit-icon">⚡</span><div><strong>Quick Onboarding</strong><p>Ready to work within 48–72 hours</p></div></div>
+            <div class="benefit-item"><span class="benefit-icon">💰</span><div><strong>Cost Effective</strong><p>Save up to 60% vs in-house hiring</p></div></div>
+            <div class="benefit-item"><span class="benefit-icon">🔄</span><div><strong>Flexible Contracts</strong><p>Scale up or down anytime</p></div></div>
+          </div>
+          <a href="#contact" class="btn-primary" style="background:var(--blue-600);color:#fff;margin-top:28px;display:inline-block;">Request Staff →</a>
+        </div>
+        <div class="outsourcing-right">
+          <div class="roles-grid">
+            <div class="role-card"><div class="role-icon">👨‍💻</div><span>Frontend Developers</span></div>
+            <div class="role-card"><div class="role-icon">⚙️</div><span>Backend Developers</span></div>
+            <div class="role-card"><div class="role-icon">📱</div><span>Mobile Developers</span></div>
+            <div class="role-card"><div class="role-icon">☁️</div><span>Cloud Engineers</span></div>
+            <div class="role-card"><div class="role-icon">🔐</div><span>Security Experts</span></div>
+            <div class="role-card"><div class="role-icon">🧪</div><span>QA Engineers</span></div>
+            <div class="role-card"><div class="role-icon">🎨</div><span>UI/UX Designers</span></div>
+            <div class="role-card"><div class="role-icon">📊</div><span>Data Analysts</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- PORTFOLIO -->
   <section id="portfolio">
     <div class="container">
@@ -202,6 +309,20 @@
             <div class="portfolio-tag">Cybersecurity</div>
             <h3>Security Audit</h3>
             <p>Comprehensive security overhaul for a healthcare data platform.</p>
+          </div>
+        </div>
+        <div class="portfolio-card p5">
+          <div class="portfolio-overlay">
+            <div class="portfolio-tag">Staff Outsourcing</div>
+            <h3>Team Augmentation</h3>
+            <p>Provided 10 full-stack developers to a UK-based startup within 72 hours.</p>
+          </div>
+        </div>
+        <div class="portfolio-card p6">
+          <div class="portfolio-overlay">
+            <div class="portfolio-tag">Training</div>
+            <h3>Corporate Training</h3>
+            <p>Trained 200+ employees in cloud computing and cybersecurity for a Fortune 500 firm.</p>
           </div>
         </div>
       </div>
@@ -243,6 +364,8 @@
                 <option>IT Consulting</option>
                 <option>Cloud Services</option>
                 <option>Cybersecurity</option>
+                <option>Staff Outsourcing</option>
+                <option>Training Programs</option>
               </select>
             </div>
             <div class="form-group">
@@ -276,6 +399,8 @@
           <a href="#services">Web Development</a>
           <a href="#services">App Development</a>
           <a href="#services">Cybersecurity</a>
+          <a href="#outsourcing">Staff Outsourcing</a>
+          <a href="#training">Training</a>
         </div>
         <div class="footer-links">
           <h4>Contact</h4>
@@ -322,5 +447,14 @@
       setTimeout(() => document.getElementById('form-success').style.display = 'none', 5000);
     });
   </script>
+  <!-- ✅ WhatsApp Float Button — Replace YOUR_NUMBER with your WhatsApp number e.g. 919876543210 -->
+  <a href="https://wa.me/YOUR_NUMBER?text=Hello%20TekStar%20Technologies!%20I%20would%20like%20to%20know%20more%20about%20your%20services."
+     class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="28" height="28">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+    <span class="whatsapp-tooltip">Chat with us!</span>
+  </a>
+
 </body>
 </html>
