@@ -48,9 +48,30 @@
       transform: rotateY(180deg);
     }
 
-    /* .flip-inner.rotate {
-      transform: rotateY(180deg);
-    } */
+    /* Industories focused */
+    .slide {
+      min-width: 100%;
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .slide div,
+    .slide {
+      font-size: 20px;
+      font-weight: 600;
+      padding: 20px 40px;
+      border-radius: 16px;
+      background: #f3f4f6;
+      color: #111827;
+      transition: all 0.3s ease;
+    }
+
+    .slide:hover {
+      background: #4f46e5;
+      color: white;
+      transform: scale(1.05);
+    }
   </style>
 </head>
 
@@ -420,9 +441,41 @@
 
       </div>
     </div>
-
   </section>
 
+  <!-- Industories focused  -->
+  <section id="industries" class="bg-white py-20">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+
+      <h2 class="text-3xl font-bold text-gray-900 mb-10">
+        Industries We Focus On
+      </h2>
+
+      <!-- Carousel Wrapper -->
+      <div class="overflow-hidden relative">
+
+        <!-- Track -->
+        <div id="track" class="flex transition-transform duration-700 ease-in-out">
+
+          <!-- 🔁 CLONE LAST (for smooth loop start) -->
+          <div class="slide">🤖 AI & Data Driven</div>
+
+          <!-- ORIGINAL SLIDES -->
+          <div class="slide">💰 FinTech</div>
+          <div class="slide">🚚 Fleet Management</div>
+          <div class="slide">🛒 E-Commerce</div>
+          <div class="slide">☁️ SaaS Platform</div>
+          <div class="slide">🤖 AI & Data Driven</div>
+
+          <!-- 🔁 CLONE FIRST -->
+          <div class="slide">💰 FinTech</div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
   <!-- Careers -->
   <section id="careers" class="bg-gray-50 py-20">
     <div class="max-w-7xl mx-auto px-6">
@@ -686,6 +739,40 @@
         card.querySelector(".flip-inner").classList.toggle("rotate");
       });
     });
+
+    // Industries carousel
+    const track = document.getElementById("track");
+    const slides = document.querySelectorAll(".slide");
+
+    let index = 1; // start from first real slide
+    const totalSlides = slides.length;
+
+    // Initial position
+    track.style.transform = `translateX(-${index * 100}%)`;
+
+    function moveSlide() {
+      index++;
+      track.style.transition = "transform 0.7s ease-in-out";
+      track.style.transform = `translateX(-${index * 100}%)`;
+    }
+
+    track.addEventListener("transitionend", () => {
+      // If at cloned last
+      if (index === totalSlides - 1) {
+        track.style.transition = "none";
+        index = 1;
+        track.style.transform = `translateX(-${index * 100}%)`;
+      }
+
+      // If at cloned first
+      if (index === 0) {
+        track.style.transition = "none";
+        index = totalSlides - 2;
+        track.style.transform = `translateX(-${index * 100}%)`;
+      }
+    });
+
+    setInterval(moveSlide, 2500);
   </script>
 </body>
 
